@@ -1,0 +1,7 @@
+.sorting{
+  background-image: none;
+}
+table.dataTable thead .sorting.edit{
+background-image: none;
+}
+

@@ -1,0 +1,17 @@
+.dropdown-toggle{
+  cursor: pointer;
+}
+.material-icons{
+  float: left;
+}
+
+
+.badge-cart {
+  color: #fff;
+  margin-left: 5px;
+  background-color: #D62839;
+}
+
+.mg-lft-100 {
+  color: #fff;
+}

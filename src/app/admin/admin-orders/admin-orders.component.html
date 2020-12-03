@@ -1,0 +1,18 @@
+
+<h1 class="mb-5">Orders</h1>
+<table class="container table table-striped">
+  <thead>
+  <tr>
+    <th class=""><h1>Customer</h1></th>
+    <th><h1>Date</h1></th>
+    <th><h1>Views</h1></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let o of orders$ | async">
+    <td>{{o.shipping.firstName}} {{o.shipping.lastName}}</td>
+    <td>{{o.datePlaced | date: 'dd/MM/yyyy'}}</td>
+    <td><a routerLink="['admin/orders/', o.key]">View</a></td>
+  </tr>
+  </tbody>
+</table>

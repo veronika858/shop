@@ -1,0 +1,16 @@
+.btn{
+  margin-bottom: 3%;
+}
+
+@media (max-width: 370px){
+  .card{
+margin-left: -15px;
+    margin-right: 0;
+
+  }
+}
+@media (max-width: 584px){
+  .card, .form-group{
+  width: 90%;
+  }
+}

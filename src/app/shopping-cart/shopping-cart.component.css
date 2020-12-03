@@ -1,0 +1,29 @@
+
+.thumbnail {
+  width: 4em;
+  height: 4em;
+  border-radius: 100%;
+  background-size: cover;
+}
+.table td{
+  vertical-align: middle;
+}
+.float{
+  float: right;
+}
+.quantity{
+  width: 25%;
+}
+@media (max-width: 550px) {
+  .table td:nth-child(1),
+  .table th:nth-child(1) { display: none; }
+  .quantity{
+    width: auto;
+  }
+}
+@media (max-width: 575px){
+  .float{
+    float: none;
+  }
+}
+

@@ -1,0 +1,7 @@
+.card h2{
+  letter-spacing: 1px;
+}
+.card{
+  border-radius: 1.3em;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+}

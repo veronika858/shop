@@ -1,0 +1,53 @@
+<form #f= "ngForm">
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="firstName">First Name</label>
+    <input #firstName = "ngModel"[(ngModel)]="shipping['firstName']" name="firstName" type="text" class="form-control" id="firstName" required>
+    <div class="alert alert-danger" *ngIf="firstName.touched && firstName.invalid">
+      <div *ngIf="firstName.errors.required">First Name is required.</div>
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="lastName">Last Name</label>
+    <input #lastName = "ngModel" [(ngModel)]="shipping['lastName']" name="lastName" type="text" class="form-control" id="lastName" required>
+    <div class="alert alert-danger" *ngIf="lastName.touched && lastName.invalid">
+      <div *ngIf="lastName.errors.required">Last Name is required.</div>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label for="inputAddress">Address</label>
+  <input name="address" #address = "ngModel" [(ngModel)] = "shipping['address']" type="text" class="form-control" id="inputAddress" placeholder="Main 133" required>
+  <div class="alert alert-danger" *ngIf="address.touched && address.invalid">
+    <div *ngIf="address.errors.required">Address is required.</div>
+  </div>
+</div>
+<!--<div class="form-group">
+  <label for="inputAddress2">Address 2</label>
+  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+</div>-->
+<div class="form-row">
+  <div class="form-group col-md-8">
+    <label for="inputCity">City</label>
+    <input #city = "ngModel" [(ngModel)]="shipping['city']" name="city" type="text" class="form-control" id="inputCity" required>
+    <div class="alert alert-danger" *ngIf="city.touched && city.invalid">
+      <div *ngIf="city.errors.required">City is required.</div>
+    </div>
+  </div>
+  <div class="form-group col-md-4">
+    <label for="inputZip">Zip</label>
+    <input #zip = "ngModel" [(ngModel)]="shipping['zip']" name="zip" type="text" class="form-control" id="inputZip" placeholder="04001" required>
+    <div class="alert alert-danger" *ngIf="zip.touched && zip.invalid">
+      <div *ngIf="zip.errors.required">Zip is required.</div>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label for="inputState">State</label>
+  <input #state = "ngModel" [(ngModel)]="shipping['state']" name="state" type="text" class="form-control" id="inputState" required>
+  <div class="alert alert-danger" *ngIf="state.touched && state.invalid">
+    <div *ngIf="state.errors.required">State is required.</div>
+  </div>
+</div>
+<button [disabled]="!f.valid" type="submit" (click)="placeOrder()" class="btn btn-primary">Place Order</button>
+</form>

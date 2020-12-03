@@ -1,0 +1,18 @@
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  color: #007bff;
+}
+@keyframes typing { from { width: 0; } }
+@keyframes caret { 100% { border-color: transparent; } }
+
+h1 {
+  width: 9ch;
+  border-right: 0.08em solid;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(9, end), caret .5s step-end infinite;
+}
