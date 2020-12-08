@@ -43,9 +43,4 @@ export class OrderService {
         )
       );
   }
-  // tslint:disable-next-line:typedef
-/*  getAllByUser(userId: string){
-    // https://stackoverflow.com/questions/47129039/query-does-not-exist-in-type-queryfn-angularfire2
-    return this.db.list<any>('/orders', ref => ref.orderByChild('userId').equalTo(userId)).snapshotChanges();
-  }*/
 }

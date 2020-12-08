@@ -3,7 +3,7 @@ import {AuthService} from './auth.service';
 import {Observable} from 'rxjs';
 import {CanActivate} from '@angular/router';
 import {map} from 'rxjs/operators';
-import {AppUser} from './models/app-user';
+import {AppUser} from './shared/models/app-user';
 
 @Injectable({
   providedIn: 'root'

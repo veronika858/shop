@@ -3,7 +3,7 @@ import {OrderService} from '../order.service';
 import {AuthService} from '../auth.service';
 import {switchMap} from 'rxjs-compat/operator/switchMap';
 import {map, switchAll} from 'rxjs/operators';
-import {Order} from '../models/order';
+import {Order} from '../shared/models/order';
 import {Observable, Subscription} from 'rxjs';
 import {UserService} from '../user.service';
 import {User} from 'firebase';
